@@ -9,10 +9,10 @@
   - [Challenge Overview](#challenge-overview)
   - [Summary](#summary)
 - [Impact](#impact)
-- [Challenge Faced & Solutions](#challenge-faced--solutions)
+- [Challenge Faced and Solutions](#challenge-faced-and-solutions)
 - [Tools We Use](#tools-we-use)
 - [Features](#features)
-- [Installation & Setup](#installation--setup)
+- [Installation and Setup](#installation-and-setup)
 - [Application](#application)
   - [Home Page](#home-page)
   - [Explore Page](#explore-page)
@@ -60,7 +60,7 @@ With our interactive, easy-to-use tools, we aim to:
 
 ---
 
-## Challenge Faced & Solutions
+## Challenge Faced and Solutions
 
 - **Challenge**: Making NASA’s complex PACE data accessible for younger audiences.
   - **Solution**: Simplified visualizations and tailored lesson materials to make the data engaging.
@@ -78,7 +78,7 @@ With our interactive, easy-to-use tools, we aim to:
 
 ## Tools We Use
 
-- **Frontend**: React, Vite, Three.js, Node.js
+- **Frontend**: React + Vite, Three.js, Node.js
 - **Backend**: Python-Flask
 - **Database/Cloud Storage**: MongoDB Atlas
 - **Data Source**: [PACE Ocean Data API](https://oceandata.sci.gsfc.nasa.gov/api/file_search/)
@@ -99,7 +99,7 @@ With our interactive, easy-to-use tools, we aim to:
 
 ---
 
-## Installation & Setup
+## Installation and Setup
 
 - *Clone the Repository:* 
 
@@ -141,41 +141,64 @@ npm run dev
 
 ### Home Page:
 
-- Interaction with a 3D Earth globe.
+- Interaction with a 3D Earth globe: The Home Page serves as the interactive centerpiece of the project, allowing users to engage with a fully rotatable 3D globe. This immersive feature gives users the ability to explore different parts of the Earth, observe various regions of the ocean and atmosphere, and develop a visual connection to the data. The globe displays real-time environmental information, introducing users to global ecosystems, and providing a contextual understanding of the Earth’s climate systems. This page also sets the stage for deeper learning in subsequent sections.
 
-  ![Home Page (1)](https://github.com/user-attachments/assets/9d1af1c4-691b-4bb6-90ae-9c5aa4c2258a)
+  ![Home](https://github.com/user-attachments/assets/2bea5b05-9d3c-4f30-b107-16a3d6fc80b7)
 
   ![Home Page (3)](https://github.com/user-attachments/assets/f0198700-5575-4e7a-a408-f732bdcc732f)
 
 ### Explore Page:
 
-- Learn about PACE’s instruments like **OCI**, **SPEXone**, and **HARP2**.
-
+- Learn about PACE’s instruments: On the Explore Page, users can delve into the science behind the instruments aboard NASA's PACE satellite. Detailed explanations of the Ocean Color Instrument (OCI), SPEXone polarimeter, and HARP2 polarimeter are paired with interactive visuals. This page is designed to make complex satellite instruments more approachable, explaining how they collect crucial data on ocean color, aerosol properties, and atmospheric particles. Each instrument plays a key role in monitoring Earth's climate, and this page provides a digestible, student-friendly introduction to their functions.
+  - Interactive instrument learning: By clicking on the icons or images of the instruments, users are presented with animated descriptions, showing how each one operates in space and collects data. This hands-on experience helps users, particularly students, visualize what these sophisticated devices do in the context of Earth sciences.
+    
   ![Explore Page](https://github.com/user-attachments/assets/df82cf2d-3585-43a4-8401-f6d79e24b797)
 
 ### Lessons Page:
 
-- Explore lessons on PACE, its instruments, and the ocean-atmosphere relationship.
+- Explore lessons on PACE and Earth systems: The Lessons Page is a cornerstone of the educational aspect of this project. It offers structured, interactive lessons for students of various age groups. These lessons cover topics like the science behind PACE’s mission, how its instruments work, and the importance of studying Earth’s oceans and atmosphere. By engaging students with visual explanations, videos, and quizzes, this page encourages active learning and makes complex scientific concepts more accessible.
+  
+  - Learning modules: Each lesson module is carefully crafted to provide a mix of theory and interactive activities. Students can explore how phytoplankton impacts ocean health, or how aerosols affect the atmosphere, by interacting with on-screen simulations and images. This makes it easier to understand how the data PACE gathers translates into real-world impacts on the environment.
+    
+  - Self-paced quizzes: After each lesson, students are encouraged to take quizzes to test their understanding. This reinforces learning and makes it more engaging for young minds.
 
   ![Lessons Page](https://github.com/user-attachments/assets/990a2d3b-73f8-48c3-82e3-f404717aa329)
 
   ![Lesson1 Page (1)](https://github.com/user-attachments/assets/0d70d257-a0cc-4b2f-9afb-d13992c5617a)
 
-  ![Lesson2 Page](https://github.com/user-attachments/assets/26a2a2fd-89b2-4d06-8372-f447db773bc5)
+  ![Lesson3](https://github.com/user-attachments/assets/d249484b-0f0d-4119-9c7b-59f812289e8c)
 
   ![Lesson3 Page](https://github.com/user-attachments/assets/38e20309-395b-4e0c-a4b9-4f68857219a5)
 
 ### Maps Page:
 
-- 2D Map & 3D Globe showing **Chlorophyll**, **Carbon** concentrations, and **Sea Surface Temperature**.
+- Visualize global data on Chlorophyll, Carbon, and Sea Surface Temperature: The Maps Page offers two distinct visualization tools to help users understand critical environmental data gathered by NASA's PACE satellite. It includes an interactive 3D Earth globe for spatial exploration and Graph Visualization for detailed temporal data analysis.
 
-  ![Map Page](https://github.com/user-attachments/assets/8f760cb1-95e6-472e-9ad5-8d20cc8f4219)
+  - 3D Earth Globe: Users can interact with a fully rotatable 3D globe that displays real-time data for Chlorophyll concentrations, Carbon levels, and Sea Surface Temperature (SST). The 3D view allows users to explore global patterns and observe how ocean and atmospheric conditions vary across different regions of the planet. This visualization helps students and teachers connect large-scale environmental processes with specific geographic locations.
+    
+  - Graph Visualization: In addition to the 3D globe, the Maps Page also features a Graph Visualization tool that plots the mean values of environmental data, such as Chlorophyll and Carbon concentrations and Sea Surface temperature, over a 30-day period. The graphs display key trends and fluctuations in these metrics, helping users understand how environmental factors change over time. This feature allows students and educators to analyze temporal trends in ocean and atmospheric data.
+
+  - Data insights: The combination of the 3D Earth globe and Graph Visualization offers users a comprehensive understanding of how PACE data translates into real-world impacts. While the 3D globe provides a global overview of Earth's climate and ecosystems, the graphs give a time-based perspective, enabling deeper insights into trends and variations over monthly periods.
+    
+  ![Globe](https://github.com/user-attachments/assets/febbcfed-cf88-43e0-a88e-5b6e2124a725)
+
+  ![Graph](https://github.com/user-attachments/assets/4b724d43-281e-4fe2-af3b-693e38e98361)
 
 ### Community Page:
 
-- Share your ideas and see what others have contributed.
+- Collaborative learning and idea sharing: The Community Page is designed to foster interaction between learners, educators, and contributors from around the world. It encourages the sharing of ideas, feedback, and projects based on the PACE data and learning materials. Users can upload their own projects, post questions, and engage in discussions with others working on similar topics, creating a sense of community and collaborative learning.
+ 
+  - Global participation: The Community Page encourages participation from different parts of the world, making it a global platform for sharing knowledge about ocean literacy and environmental science.
 
   ![Community Page](https://github.com/user-attachments/assets/37bf811c-2685-4c3f-a2c4-873105f5e801)
+
+
+### Our Workflow:
+
+
+ ![Flow_Chart 1](https://github.com/user-attachments/assets/62eb4f3a-4b8d-4f1c-bab3-ba65ddb030d5)
+
+
 
 ---
 
@@ -184,21 +207,23 @@ npm run dev
 
 ### Members:
 
-- **Devanshu Mangal** - Frontend & Backend
-- **Ronit Rathod** - Backend, Database, Video Editor
-- **Dhairya Prajapati** - Frontend
-- **Manan Tarsariya** - Backend, Literature Survey
-- **Jit Prajapati** - Website Deployment
-- **Jainex Pumbhadiya** - Website Deployment
+- **Devanshu Mangal** - Frontend and Backend.
+- **Ronit Rathod** - Backend, Database and Video Editor.
+- **Dhairya Prajapati** - Frontend.
+- **Manan Tarsariya** - Backend and Literature Survey.
+- **Jit Prajapati** - Website Deployment.
+- **Jainex Pumbhadiya** - Website Deployment.
+
+We are student of 2nd Year, Computer Engineering Department, SCET, Surat.
 
 ### Mentors:
 
-- **Mr. Nishant Painter** - CEO & Founder, Shivantra.
-- **Prof. (Dr.) Bintu Kadhiwala** - Assistant Professor, Computer Department, SCET.
+- **Mr. Nishant Painter** - CEO and Founder, Shivantra.
+- **Prof. (Dr.) Bintu Kadhiwala** - Assistant Professor, Computer Engineering Department, SCET, Surat.
 
 ### Special Thanks:
 
-- Special thanks to **Prof. Dhatri Pandya** for her guidance. - Assistant Professor, Computer Department, SCET
+- Special thanks to **Prof. Dhatri Pandya** (Assistant Professor, Computer Engineering Department, SCET, Surat) for her guidance. 
 - Thanks to **NASA** for access to PACE satellite data.
 
 ---
