@@ -108,3 +108,4 @@ xarray==2024.9.0
 xyzservices==2024.9.0
 zope.event==5.0
 zope.interface==7.0.3
+python-dotenv

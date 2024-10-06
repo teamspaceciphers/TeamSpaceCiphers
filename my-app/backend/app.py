@@ -2,6 +2,10 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 from pymongo import MongoClient
 from bson.objectid import ObjectId
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 
 app = Flask(__name__)
@@ -9,8 +13,9 @@ CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
 
 
 # MongoDB connection
-uri = "mongodb+srv://manan:Rathod%40pace01@manan0.hskga.mongodb.net/chlorophyll_data?retryWrites=true&w=majority"
-client = MongoClient(uri)
+
+uri = os.getenv("uri")
+client= MongoClient(uri)
 db = client['APRIL_DownSample']
 
 # Collections
@@ -93,7 +98,10 @@ def get_data():
         return jsonify({'message': 'Invalid parameters'}), 400
 
 
-uri_Commit = "mongodb+srv://devanshumangalco23d2:devanshu1.@cluster0.pcklg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+
+uri_Commit = os.getenv("uri_Commit")
+client_commit = MongoClient(uri_Commit)
+db_commit = client_commit['CommitmentCards']
 
 # Connect to MongoDB
 client2 = MongoClient(uri_Commit)
