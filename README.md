@@ -192,14 +192,6 @@ npm run dev
 
   ![Community Page](https://github.com/user-attachments/assets/37bf811c-2685-4c3f-a2c4-873105f5e801)
 
-
-### Our Workflow:
-
-
- ![Flow_Chart 1](https://github.com/user-attachments/assets/62eb4f3a-4b8d-4f1c-bab3-ba65ddb030d5)
-
-
-
 ---
 
 
