@@ -195,15 +195,13 @@ export function Component() {
 
             {/* "Back to Top" button */}
             {showButton && (
-                <div className="fixed bottom-8 right-8 z-20">
-                    <button
-                        onClick={scrollToTop}
-                        className="p-4 rounded-full bg-blue-500 text-white shadow-md"
-                    >
-                        <FaArrowUp size={24} />
-                    </button>
-                </div>
-            )}
+                        <button
+                            onClick={scrollToTop}
+                            className="fixed bottom-8 right-8 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition duration-300 z-20"
+                        >
+                            <FaArrowUp size={24} /> {/* Replace button text with icon */}
+                        </button>
+                    )}
         </div>
     );
 }
