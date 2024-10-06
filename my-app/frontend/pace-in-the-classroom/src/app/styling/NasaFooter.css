@@ -1,0 +1,50 @@
+/* Add this to your global styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .animate-typing {
+        display: inline-block;
+        /* Ensure it behaves like a block */
+        white-space: nowrap;
+        /* Prevent line breaks */
+        overflow: hidden;
+        /* Hide overflow */
+        border-right: 2px solid white;
+        /* Cursor effect */
+        animation: typing 4s steps(30, end) infinite alternate;
+        /* Loop the typing animation */
+    }
+
+    @keyframes typing {
+        0% {
+            width: 0;
+            /* Start with no width */
+        }
+
+        80% {
+            width: 100%;
+            /* End with full width */
+        }
+
+        100% {
+            width: 100%;
+            /* Ensure it stays visible */
+        }
+    }
+
+    @keyframes blink {
+
+        0%,
+        100% {
+            border-color: transparent;
+            /* Make the cursor invisible */
+        }
+
+        50% {
+            border-color: white;
+            /* Make the cursor visible */
+        }
+    }
+}
