@@ -19,6 +19,9 @@
   - [Lessons Page](#lessons-page)
   - [Maps Page](#maps-page)
   - [Community Page](#community-page)
+- [Schematics](#schematics)
+  - [Flowchart 1: Application Architecture](#flowchart-1-application-architecture)
+  - [Flowchart 2: backend Request handling](#flowchart-2-backend-request-handling)
 - [Team](#team)
   - [Members](#members)
   - [Mentors](#mentors)
@@ -194,6 +197,70 @@ npm run dev
 
 ---
 
+## Schematics
+
+### Flowchart 1: Application Architecture
+
+This flowchart represents the architecture of an application with a focus on the interaction between the frontend, backend, and database.
+
+1. **Application (Frontend)**
+   - The application frontend is built using React and Vite, deployed on Vercel.
+   - It handles user interactions and makes API requests to the backend.
+
+2. **React + Vite Project on Vercel (Frontend)**
+   - The frontend framework handles user inputs and sends API requests to the backend to process user interactions like authentication, data fetching, and saving.
+
+3. **MongoDB (Database)**
+   - MongoDB is used for database operations. It handles data retrieval, update, and delete operations in response to requests from the backend.
+
+4. **User Interactions (Frontend)**
+   - The user interacts with the frontend, which triggers authentication or data-related operations.
+   - These operations are handled by API requests sent to the backend, which communicates with the database.
+
+5. **Python Flask Project on GCP (Backend)**
+   - The backend is a Python Flask project hosted on Google Cloud Platform (GCP).
+   - It handles the API requests from the frontend, processes the data, and communicates with the MongoDB database to complete the requested operations.
+
+6. **Flow of Data**
+   - Data flows between the frontend, backend, and database through API requests.
+   - The frontend initiates requests, the backend processes them, and the database responds with the necessary data. The backend sends the processed data back to the frontend for user display.
+
+   ![Flow_Chart](https://github.com/user-attachments/assets/749a942d-cbee-4d24-9420-52cd9b31b545)
+
+### Flowchart 2: Backend Request Handling
+
+This flowchart outlines how backend requests are handled from user interactions to database queries and error handling.
+
+1. **User Inputs and Interactions**
+   - Users interact with the frontend by inputting data or making requests.
+
+2. **API Requests to Backend**
+   - The frontend sends API requests to the backend for processing.
+
+3. **Handling Incoming Requests on Flask**
+   - The Flask backend receives incoming requests and processes them accordingly.
+
+4. **Database Operations**
+   - The backend sends a query to the database to retrieve or update data based on the user request.
+
+5. **Database**
+   - The database processes the query and sends the requested data back to the backend.
+
+6. **Backend Processing**
+   - The backend processes the data and prepares it for sending back to the frontend.
+
+7. **Flow of Data Between Frontend and Backend**
+   - The data flows back to the frontend from the backend.
+
+8. **Error Handling and Feedback Loops**
+   - Any errors that occur during data processing are handled by the backend, and feedback is provided to the frontend.
+
+9. **Displays on the Frontend**
+   - The processed data is displayed on the frontend for the user to interact with. 
+
+   ![Flowchart](https://github.com/user-attachments/assets/9efcb99a-8bef-4840-8c4a-f9c8fc59a8a3)
+
+---
 
 ## Team
 
